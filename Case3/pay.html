@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pay</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">E-Shopping</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../Case3/index.html">Home</a>
+                    <a class="nav-item nav-link" href="#">Products</a>
+                    <a class="nav-item nav-link" href="#">Deals</a>
+                  </div>
+                </div>
+              </nav>
+      <!--Bootstrap source: https://tutorialzine.com/2016/11/simple-credit-card-validation-form-->
+      <div class="jumbotron jumbotron-fluid text-md-center">
+          <div class="container">
+              <h1 class="display-3">Step 1/2 : Payment Completion</h1>
+              <p class="lead">Enter credit/debit card information</p>
+          </div>
+      </div>
+      <div class="card container h-100" style="width:400px">
+            <div class="card-body text-md-center">
+                    <div class="row">
+                            <label>Enter Card Number</label>
+                        </div>
+   <div class="row">
+                               
+                                <input type="text"  class="form-control" id="cardNumber">
+            
+            </div>
+        </br>
+        <div class="row">
+                <label>Enter Cardholder Name</label>
+            </div>
+
+            <div class="row">
+                            
+                            <input type="text"  class="form-control" id="owner"> </br>
+                            </div>
+                        </br>
+                        <div class="row">
+                                <label>Enter CVV</label>
+                            </div>
+                            <div class="row">
+ 
+                            <input type="text"  class="form-control" id="cvv"> </br>
+                            </div>
+                        </br>
+
+                        <div class="row">
+                            <label>Enter Expiry Date</label>
+                        </div>
+
+                     <div class="row justify-content-around">
+                            
+                            <select class="col-4">
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select class="col-4">
+                                <option value="16"> 2016</option>
+                                <option value="17"> 2017</option>
+                                <option value="18"> 2018</option>
+                                <option value="19"> 2019</option>
+                                <option value="20"> 2020</option>
+                                <option value="21"> 2021</option>
+                            </select>
+                     </div>
+            </div>
+                       
+                    
+                        <div class="card-body text-md-center" id="pay-now">
+                            <button type="submit" class="btn btn-primary text-md-center" id="confirm-purchase" onclick="PaymentAlert()">Confirm</button>
+                        </div>
+                    
+              
+
+          
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <script>
+            function PaymentAlert() {
+                alert("Please wait while next step is loading");
+                location.href = "../Case3/pay2fa.html";
+            }
+            </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

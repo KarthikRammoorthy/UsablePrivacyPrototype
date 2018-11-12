@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Pay</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">E-Shopping</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="../Case2/index.html">Home</a>
+                    <a class="nav-item nav-link" href="#">Products</a>
+                    <a class="nav-item nav-link" href="#">Deals</a>
+                  </div>
+                </div>
+              </nav>
+      <!--Bootstrap source: https://tutorialzine.com/2016/11/simple-credit-card-validation-form-->
+     
+      <div class="jumbotron jumbotron-fluid text-md-center">
+          <div class="container">
+              <h1 class="display-3">Complete Payment</h1>
+              <p class="lead display-6">Confirm with photoTAN</p>
+              <hr class="my-2">
+              <p style="color:red">New to photoTAN?</p>
+              
+             <button type="button" class="btn btn-outline-primary text-md-center" onclick="RedirectYoutube()">Click to know more</button>
+              
+          </div>
+      </div>
+
+      <!-- Picture source: https://commons.wikimedia.org/wiki/File:PhotoTAN.svg-->
+ 
+      <div class="container" style="width: 25em;margin:0 auto;" >
+      <div class="card bg-light mb-3 text-md-center" style="max-width: 25rem;">
+        <div class="card-header text-md-center">QR Scanner</div>
+        <div class="card-body">
+          <h5 class="card-title">Scan with photoTAN App</h5>
+          <p class="card-text">Hold you smartphone in front of this area </p>
+        
+        <img class="text-md-center" style="max-width: 18rem;" src="../Case2/PhotoTAN.png" alt="Card image cap">
+      </div>
+      </div>
+      </div>
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- Youtube Source: https://www.youtube.com/watch?v=-rrcU6R6Oe0-->
+    <script>
+            function PaymentAlert() {
+                alert("Payment Successful");
+                location.href = "../Case2/index.html";
+            
+            }
+            function RedirectYoutube() {
+                location.href = "https://www.youtube.com/watch?v=-rrcU6R6Oe0";
+            }
+            
+
+            </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>
